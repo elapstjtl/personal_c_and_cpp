@@ -1,27 +1,35 @@
+/*
+ * @Author: your name
+ * @Date: 2020-10-15 13:44:58
+ * @LastEditTime: 2020-11-30 09:51:45
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \code\c\pta\7-4 .c
+ */
 #include<stdio.h>
-#include<math.h>
+#include<windows.h>
 
 int main(void)
 {
-	int a,b;
-	double money,odd,solo;
-	char c;
-	scanf("%d %d %c",&a,&b,&c);
-	if (c == 'm')
-	odd = 0.05;
-	if (c=='e')
-	odd = 0.03;
-	
-	if (b == 90)
-	solo = 6.95;
-	if (b == 93)
-	solo = 7.44;
-	if (b == 97)
-	solo = 7.93;
-	
-	money = a*solo*(1-odd);
-	printf("%.2lf",money);
-	return 0;
+int m=0,n,i,j;
+scanf("%d %d",&m,&n);
+
+int b[1000] = {0};
+int a[m][n];
+for (i = 0; i <m;i++)
+{
+	for (j = 0; j <n;j++)
+	scanf("%d",&a[i][j]);
+}
+for (i = 0; i <m;i++)
+{
+	for (j = 0; j <n;j++)
+	b[i] += a[i][j];
+}
+for (i = 0;i<m;i++)
+printf("%d\n",b[i]);
+system("pause");
+return 0;
 	
 	
 }
