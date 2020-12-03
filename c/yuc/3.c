@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-10-04 16:33:19
+ * @LastEditTime: 2020-12-03 11:20:19
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \code\c\yuc\3.c
+ */
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -6,23 +14,7 @@
 
 int main()
 {
-        int length, aver;
-        int i, j;
-        char str[MAX];
-
-        scanf("%s", str);
-
-        length = strlen(str);
-        aver = sqrt(length);
-
-        for (i = 0; i < aver; i++)
-        {
-                for (j = 0; j < aver; j++)
-                {
-                        printf("%c ", str[i * aver + j]);
-                }
-                printf("\n");
-        }
-
-        return 0;
+        
+system("pause");
+return 0;
 }

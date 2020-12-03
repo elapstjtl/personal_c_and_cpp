@@ -7,7 +7,7 @@
         "-finput-charset=UTF-8",// 处理mingw中文编码问题
         "${file}",
         "-o",
-        "${workspaceFolder}/cpp/exe/${fileBasenameNoExtension}.exe",
+        "${workspaceFolder}/.vscode/exe/${fileBasenameNoExtension}.exe", //生成exe文件存放的地址
     ], // 编译命令参数
     "problemMatcher": {
         "owner": "cpp",
