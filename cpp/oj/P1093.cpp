@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-03 09:49:07
- * @LastEditTime: 2020-12-03 11:55:29
+ * @LastEditTime: 2020-12-03 12:03:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\cpp\cpp\oj\p1059.cpp
@@ -12,19 +12,17 @@ using namespace std;
 set<int>s;
 int main(void)
 {
-int m,i;
-cin >> m;
-int a[m];
-for (i = 0;i<m;i++)
+int n,i;
+cin >> n;
+int Chinese[n],math[n],english[n];
+int sum[n],flag[n];
+for (i = 0;i<n;i++)
 {
-    cin >>a[i];
-    s.insert(a[i]);
+    cin >>Chinese[i] >> math[i]>> english[i];
+    sum[i] = Chinese[i] + math[i] + english[i];
 }
-cout << s.size() << endl;
-for (set<int>::iterator it = s.begin(); it != s.end(); ++it)
-{
-    cout << *it << " ";
-}
+
+
 
 system("pause");
 return 0;
