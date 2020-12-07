@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-26 11:03:21
- * @LastEditTime: 2020-11-30 08:20:43
+ * @LastEditTime: 2020-12-03 19:37:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\cpp\cpp\base\circle\quick_sort.cpp
@@ -68,6 +68,6 @@ void j_qsort (int *a,int n)
 			break;
 		temp =a[left];a[left] = a[right];a[right] = temp;
 	}
-	s_qsort(a,left);
-	s_qsort(a+left,n-left);
+	j_qsort(a,left);
+	j_qsort(a+left,n-left);
 }

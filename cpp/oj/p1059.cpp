@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-03 09:49:07
- * @LastEditTime: 2020-12-03 11:55:29
+ * @LastEditTime: 2020-12-03 19:36:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\cpp\cpp\oj\p1059.cpp
@@ -21,7 +21,7 @@ for (i = 0;i<m;i++)
     s.insert(a[i]);
 }
 cout << s.size() << endl;
-for (set<int>::iterator it = s.begin(); it != s.end(); ++it)
+for (set<int>::iterator it = s.begin(); it != s.end(); ++it) //迭代器输出
 {
     cout << *it << " ";
 }
