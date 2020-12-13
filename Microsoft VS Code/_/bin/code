@@ -6,7 +6,7 @@ if [ "$VSCODE_WSL_DEBUG_INFO" = true ]; then
 	set -x
 fi
 
-COMMIT="e5a624b788d92b8d34d1392e4c4d9789406efe8f"
+COMMIT="940b5f4bb5fa47866a54529ed759d95d09ee80be"
 APP_NAME="code"
 QUALITY="stable"
 NAME="Code"
