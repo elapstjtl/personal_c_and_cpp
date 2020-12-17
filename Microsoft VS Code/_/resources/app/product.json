@@ -1211,16 +1211,16 @@
 			}
 		}
 	],
-	"commit": "940b5f4bb5fa47866a54529ed759d95d09ee80be",
-	"date": "2020-12-10T22:45:11.850Z",
+	"commit": "ea3859d4ba2f3e577a159bc91e3074c5d85c0523",
+	"date": "2020-12-16T16:34:46.910Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "fzEF0a3djLTX3JmvQmmykg",
-		"vs/workbench/workbench.desktop.main.js": "GnwwocwSKxQe05JQFacXPQ",
+		"vs/base/parts/sandbox/electron-browser/preload.js": "NjjfvUr+v2AyRw6l7E8VOQ",
+		"vs/workbench/workbench.desktop.main.js": "vVrhcSq2ReaXjNs9uAL+CA",
 		"vs/workbench/workbench.desktop.main.css": "Kwezqk+OD5C6Cl+lH/bIYg",
-		"vs/workbench/services/extensions/node/extensionHostProcess.js": "ZgNaIVvQYNy2/49SHhtr7g",
+		"vs/workbench/services/extensions/node/extensionHostProcess.js": "0HPQOJF9A3hUl5t1/ZJS7Q",
 		"vs/code/electron-browser/workbench/workbench.html": "DCAx76TE79oJvbVEouBCXQ",
-		"vs/code/electron-browser/workbench/workbench.js": "tKolXSOo6KxiZ4/9WVR7gA"
+		"vs/code/electron-browser/workbench/workbench.js": "U7/uhO1AS1PY+2dQAKr7lA"
 	},
-	"settingsSearchBuildId": 1520000755140,
+	"settingsSearchBuildId": 1520100755210,
 	"target": "user"
 }
