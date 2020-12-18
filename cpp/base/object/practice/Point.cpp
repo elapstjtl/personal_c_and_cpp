@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-17 10:35:49
- * @LastEditTime: 2020-12-17 11:32:06
+ * @LastEditTime: 2020-12-17 16:08:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\cpp\base\object\practice\Point.cpp
@@ -14,13 +14,13 @@ void Point::getXY(double _x,double _y)
     x = _x; y = _y;
 }
 
-double Point::getX(double x)
+void Point::getX(double _x)
 {
-    return x;
+    x = _x;
 }
-double Point::getY(double Y)
+void Point::getY(double _y)
 {
-    return y;
+    y = _y;
 }
 double Point::getdist(Point &p1)
 {

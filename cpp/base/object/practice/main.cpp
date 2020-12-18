@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-17 10:50:28
- * @LastEditTime: 2020-12-17 12:05:05
+ * @LastEditTime: 2020-12-17 16:14:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \code\cpp\base\object\practice\main.cpp
@@ -34,13 +34,8 @@ int main(void)
     p2.getY(y);
     
     distance = p1.getdist(p2);
-
-    c1.copyXYR(x1,y1,r1);
-
-    c2.copyXYR(x2,y2,r2);
-
-    
-    
+    c1.copy();c2.copy();
+    r1 =c1.cpr; r2 = c2.cpr;
     if (r1 + r2 > distance)
         cout << "相交";
     if (r1 + r2 == distance)

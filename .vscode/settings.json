@@ -3,6 +3,8 @@
     "files.associations": {
         "*.py": "python",
         "iostream": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "typeindex": "c",
+        "typeinfo": "c"
     }
 }
