@@ -7,10 +7,29 @@
  * @FilePath: \code\function\cpp\Own_sort.cpp
  */
 #include"_sort.h"
-void _sort::int_quick_sort(int *a, int n)
+void _sort::qsort(int *a, int n)
 {
     //升序快速排序
 	int left,right,key,temp;
+	if (n<2) return;
+	key = a[n/2];
+	for (left = 0,right = n-1;;left++,right--)
+	{
+		while(a[left] <key)
+			left++;
+		while(a[right]>key)
+			right--;
+		if (left >= right)
+			break;
+		temp =a[left];a[left] = a[right];a[right] = temp;
+	}
+	_sort::qsort(a, left);
+	_sort::qsort(a+left, n-left);
+}
+void _sort::qsort(float *a, int n)
+{
+	float key,temp;
+	int left,right;
 	if (n<2) return;
 
 	key = a[n/2];
@@ -25,6 +44,27 @@ void _sort::int_quick_sort(int *a, int n)
 			break;
 		temp =a[left];a[left] = a[right];a[right] = temp;
 	}
-	_sort::int_quick_sort(a, left);
-	_sort::int_quick_sort(a+left, n-left);
+	_sort::qsort(a, left);
+	_sort::qsort(a+left, n-left);
+}
+void _sort::qsort(double *a, int n)
+{
+	double key,temp;
+	int left,right;
+	if (n<2) return;
+
+	key = a[n/2];
+
+	for (left = 0,right = n-1;;left++,right--)
+	{
+		while(a[left] <key)
+			left++;
+		while(a[right]>key)
+			right--;
+		if (left >= right)
+			break;
+		temp =a[left];a[left] = a[right];a[right] = temp;
+	}
+	_sort::qsort(a, left);
+	_sort::qsort(a+left, n-left);
 }
